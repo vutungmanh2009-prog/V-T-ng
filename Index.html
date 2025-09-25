@@ -124,6 +124,99 @@
         <h1>Client Hack</h1>
         <p>buồn ngủ quá các bro ơi nhưng tình yêu với roblox thì không thể bỏ được</p>
         <button class="btn" onclick="openModal()">Click bằng mày đã sem sex</button>
+        </div>
+
+        <!-- Download Menu -->
+        <div class="download-menu">
+            <div class="download-card ios">
+                <div class="card-title"><span>🍎</span> iOS<br><small>iPhone & iPad</small></div>
+                <button class="card-btn">Download IPA</button>
+                <button class="card-btn">Download VNG IPA</button>
+                <button class="card-btn">Direct Install</button>
+                <div class="card-note">Direct install is provided by a third party distributor</div>
+            </div>
+            <div class="download-card android">
+                <div class="card-title"><span>📱</span> Android<br><small>All Android devices</small></div>
+                <button class="card-btn">Download Regular</button>
+                <button class="card-btn">Download VNG</button>
+                <div class="card-note warning">Only use VNG if you have a Vietnamese region locked account</div>
+            </div>
+            <div class="download-card windows">
+                <div class="card-title"><span>🖥️</span> Windows<br><small>All Windows versions</small></div>
+                <button class="card-btn" disabled>Download New UI</button>
+                <button class="card-btn" disabled>Download Legacy</button>
+                <div class="card-note">Coming soon! Windows support is currently in development</div>
+            </div>
+        </div>
+        /* Download Menu Styles */
+        .download-menu {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin: 40px auto 0 auto;
+            max-width: 1100px;
+        }
+        .download-card {
+            background: rgba(20, 20, 34, 0.85);
+            box-shadow: 0 0 24px #221b3b;
+            border-radius: 14px;
+            padding: 32px 28px 24px 28px;
+            width: 320px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-title {
+            font-size: 1.35em;
+            font-weight: 700;
+            color: #d9bfff;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        .card-title small {
+            font-size: 0.95em;
+            color: #b6a6d9;
+        }
+        .card-btn {
+            width: 100%;
+            margin: 8px 0;
+            padding: 14px 0;
+            font-size: 1.08em;
+            border: none;
+            border-radius: 7px;
+            background: #19194c;
+            color: #ffdd57;
+            cursor: pointer;
+            box-shadow: 0 0 10px #d9bfff70;
+            transition: background 0.2s, color 0.2s;
+            font-family: 'Share Tech Mono', monospace;
+        }
+        .card-btn:hover:enabled {
+            background: #6f42c1;
+            color: #fff;
+        }
+        .card-btn:disabled {
+            background: #22223b;
+            color: #aaa;
+            cursor: not-allowed;
+        }
+        .card-note {
+            margin-top: 12px;
+            font-size: 0.98em;
+            color: #7ec0ee;
+            background: #19194c;
+            border-radius: 6px;
+            padding: 8px 12px;
+            text-align: center;
+        }
+        .card-note.warning {
+            color: #ffdd57;
+            background: #48306e;
+        }
+        .download-card.ios .card-title { color: #6bd1ff; }
+        .download-card.android .card-title { color: #ffdd57; }
+        .download-card.windows .card-title { color: #b6a6d9; }
     </div>
     <div class="youtube-music" id="ytMusic">
         <span class="youtube-label">🎵 Khuôn mặt đáng thương</span><br>
